@@ -1,0 +1,45 @@
+<html>
+<head>
+<title> video streaming</title>
+<style>
+    h1
+    {
+        color:white;
+    }
+    input{
+        width:10%;
+        height:40;
+    }
+    td
+    {
+        padding:5px;
+    }
+  
+</style>
+<script type="text/javascript">
+    function add()
+    {
+        var a=Number(document.getElementById("mydiv").value);
+        var b=a+1;
+        document.getElementById("mydiv").value = b;
+
+    }
+    function comment(){
+        
+        document.getElementById("ptag").innerHTML += "<input placeholder=' write your comment here...'>";
+
+    }
+</script>
+</head>
+<body align="center" bgcolor="grey">
+<h1 > Welcome to my channel</h1>
+<video width="420" height="300" controls autoplay><source src="https://rr2---sn-ug0x-c336.googlevideo.com/videoplayback?expire=1678726137&ei=mf8OZJ3lNe_Kz7sPz4WpqAQ&ip=159.138.240.50&id=o-ANfokcfE82yTMtEnG2oLK-YafMnsAbDRztQ8bLB0YFv_&itag=18&source=youtube&requiressl=yes&mh=dz&mm=31%2C29&mn=sn-ug0x-c336%2Csn-30a7rne6&ms=au%2Crdu&mv=m&mvi=2&pl=21&initcwndbps=351250&vprv=1&mime=video%2Fmp4&ns=hcHc-RcnfQ9xVMd4vfBYtJsL&cnr=14&ratebypass=yes&dur=45.395&lmt=1656020161642875&mt=1678704065&fvip=3&fexp=24007246&c=WEB&txp=5438434&n=YBQmbJA_dAiBH6_bp&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cvprv%2Cmime%2Cns%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AOq0QJ8wRAIfDyVgtmT6zntr6N1LiNESClEmkKmKKKqgzCO_4E_LJAIhAKwTrAXEjQ9g8nNMqWifcSvnsem-AtF-OYIHyokqaPzG&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AG3C_xAwRQIgEclDMuTWP3YX9X_c6uawTAkCdJ6YJpwE_VngIuFxTcICIQDWlVD8XV826ZZD_DlDWQKj1yBAQpqmK2BuQ0ILj5c1Gg%3D%3D" type="video/mp4"></video><br>
+<table align="center">
+    <tr><td>
+<button onclick="add();" class="like"><img width="45" height="35" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAACDCAMAAACZQ1hUAAAAY1BMVEX///8AAAB9fX3p6em7u7uenp4mJib8/Pzv7+/FxcVkZGSWlpaIiIg7OzsxMTHf39/19fVGRkatra3Pz8/X19dpaWmQkJBWVlYWFha0tLRdXV1OTk50dHRubm4PDw9AQEAcHBzBMHeiAAAD10lEQVR4nO2a7baqIBCGQ1O0TC3L1Kz2/V/lLgbdih8MJXjWOry/zCXwhMMMM7jZWFlZWVlZWVlZ/d+iSejt916WrodQVgQUhysRnGPyp9MqCO6DdLXKTJx6CCReg2HXZ1jjbdAj/P06ysEujuYZXBh5+7rMYCJc4wx84OB9DUvUM85QAgO7BvO8GGdw2Lg3du2y60NgmgFMMmfXKdhGYpqhtyBr9iMzjJCQ7rD5Kh5iy0b1uQmAUUaGGbyegw7Zr9owA1jAnf+CN1OZRaBxzwLcNbx12jNJ/vNgluHMBi0aj0DXYACTvLX7yDUYLkKEWIEheQhOaQUGpxO431rBHvg0OO2NwDwDOKhOnHQ7gdyMYGGS69+drOc1DSg9iNNgPmZFRLCGzWbP7pTGECBqt2GbyTG7hwHzg019I55rmNrLBTzR7dkfLM2noT1tyrP9uFdxgIWyM4OwuRMy8uo9k8uiGjGG9rYRk6Q8TPCsolUADsNEQYhyFz1I6rIlPXXpjGkPa442L6KivUYn5woRa7SxE3kq7yj8IRNyXqO6x2YW+gj1VKOO7mckQjbTyWVz5kGis3+TtuooQhkLjWf7aApgAkLjuaW6YiBCVFc1FZolD3kjJkzyEWE6ikSEQXluWoiMGNZ+HW4FnTqWOuoJE7FFT97F543jIf84w7CmFPgtwmf7A+rx5vLFMcXgNgw+doENxO1WXjOTMdw+j8wUnJgjfVDCMGKNeN2XYfgmIPF5yKUPShi+2SOFC9nkFwwJeODD52vza4bGm2/lj2pimNx0GGTgZW1czNLLUKHaa2JIb1hj0MfAg/sDdcCibV3kSAelkwES1CfG1+vzUaz9DyYh1szwwER+bQyQEMcYo9TFkD7BR2Ge1cQQ8pQBdRyuhSFpDqRxJTsdDPzQi5ACtwXSwdDkHtgqkQ4GvoG6YhvrYOBrAl2/1WKTkN4U2KKhFoZUYWHqYhCO/9ZhOP4DDJC0Y5NlLQywf0FkN9oYXL6vP2ITxcUZwqaiiv8mYWEG2pQSVWrpCzP8ldgO+JR94dy/rVveFVpKGE6KhzSUvwelYr6sFlTctkpz4St5aRzD+816CgUhsElcjqfA8Nqhe+i5OOhieD+B+zQvU/OQ8wyBwED8OgyoREFZwLNKCJzhGolyCjJQUe1mVTX1ZcVPCfPhUN0/n3jifCCEDhRc59neXltCenoqIjyUD35vc90xV5OWs+csA6kXuN2Z3toybzlL2tPuk29b3WqiN78bfN28mjx76zSpP6zy08Tbj2grxEwaJFk4qywx/kmplZWVlZWVlZWVWf0CBxwqoS9jfR4AAAAASUVORK5CYII="></button> </td><td> <input id="mydiv" value="0"></td>
+<td><button  class="share"><img width="45" height="35" src="https://t4.ftcdn.net/jpg/04/86/04/81/240_F_486048102_H25zrxf1XZS5TGdg0dzoWfvNN8GDXd5Z.jpg"></button> </td>
+<td><button onclick="comment(); this.onclick=null;" class="comment"><img width="45" height="35" src="https://t4.ftcdn.net/jpg/01/11/68/53/240_F_111685357_H91Oe9oXUUs8mS8okrKIGbDG4cV8biui.jpg"></button> </td>
+</tr></table><br><br>
+<p id="ptag"></p>
+</body>
+</html>
